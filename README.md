@@ -46,7 +46,7 @@ This project's bid and ask quotes are set using the mid-price before that steps 
 Gamma is the projects parameter representing inventory risk as it controls quote skewing in response to inventory levels.
 
 $$
-\text{skewed\_mid}_t = \text{mid}_t - \gamma \cdot \text{inventory}_t
+\text{skewed_mid}_t = \text{mid}_t - \gamma \cdot \text{inventory}_t
 $$
 
 Avellaneda-Stoikov's gamma instead is a risk-aversion coefficient which is absorbed alongside the paper's sigma squared and $(T-t)$ term into a single empirically calibrated constant.
