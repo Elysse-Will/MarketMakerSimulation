@@ -68,4 +68,4 @@ The single run included PnL, inventory, cash position and mid vs skewed pricing 
 *Figure 2: PnL across 10 independent runs under identical parameters, illustrating Monte Carlo variance.*
 
 The 10 run overlay becomes meaningful in showing the run to run variance under identical parameters this will support the later justification of the results averaged across many Monte Carlo iterations. 
-
+Having confirmed the simulation behaves as intended, the following section presents results from systematically varying gamma, alpha and sigma across many iterations.
