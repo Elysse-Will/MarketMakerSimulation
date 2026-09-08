@@ -56,3 +56,16 @@ $$
 $$
 
 However, it's important to note that the nature of the $(T-t)$ coefficient is explicitly time varying which in the paper means the skewing naturally tapers as the end of the trading session approaches. In this project gamma is a fixed constant meaning the skewing is implemented with equal intensity throughout the trading session. A market maker would likely reduce the inventory driven skewing once there is little time remaining for that inventories price to move against the position held even if that position is large.
+
+Before running the systematic sweeps for gamma/alpha and sigma it was first seen as necessary to perform a single and multi-run of the simulation to calibrate it.  
+
+![Single-run diagnostic](Market_Making_Strategy.png)
+*Figure 1: Single-run diagnostic — PnL, inventory, cash, and mid vs skewed mid over time.*
+
+The single run included PnL, inventory, cash position and mid vs skewed pricing over time as trades accumulate. It’s important to note that in the single run graphs the inventory cap was successfully implemented (±50). Furthermore, the skewed and mid pricing visibly diverging as the inventory is long and vice versa when short proving the skewing mechanism for conserving pricing based on positioning is being used.
+
+![10-run PnL overlay](Pnl_10_Runs.png)
+*Figure 2: PnL across 10 independent runs under identical parameters, illustrating Monte Carlo variance.*
+
+The 10 run overlay becomes meaningful in showing the run to run variance under identical parameters this will support the later justification of the results averaged across many Monte Carlo iterations. 
+
