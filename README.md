@@ -60,7 +60,7 @@ However, it's important to note that the nature of the $(T-t)$ coefficient is ex
 Before running the systematic sweeps for gamma/alpha and sigma it was first seen as necessary to perform a single and multi-run of the simulation to calibrate it.  
 
 ![Single-run diagnostic](Market_Making_Strategy.png)
-*Figure 1: Single-run diagnostic — PnL, inventory, cash, and mid vs skewed mid over time.*
+*Figure 1: Single-run diagnostic - PnL, inventory, cash, and mid vs skewed mid over time.*
 
 The single run included PnL, inventory, cash position and mid vs skewed pricing over time as trades accumulate. It’s important to note that in the single run graphs the inventory cap was successfully implemented (±50). Furthermore, the skewed and mid pricing visibly diverging as the inventory is long and vice versa when short proving the skewing mechanism for conserving pricing based on positioning is being used.
 
